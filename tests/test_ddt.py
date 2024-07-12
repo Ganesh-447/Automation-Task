@@ -16,7 +16,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 def get_data_excel():
-    workbook = load_workbook('/Users/Ganesh/SeleniumAutomationPractice/tests/testdata1_ddt.xlsx')
+    workbook = load_workbook('//tests/testdata1_ddt.xlsx')
     sheet = workbook.active
     data =[]
     for row in sheet.iter_rows(min_row=2,values_only=True):
